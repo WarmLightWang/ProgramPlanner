@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/developerMainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="57dp"
+        android:text="Developer Main Page"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ProjectNameTitle"
+        android:layout_width="260dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:text="Project Name Goes Here"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTitle" />
+
+    <Button
+        android:id="@+id/buttonTaskAssignment"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="Task Assignment"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProjectNameTitle" />
+
+    <Button
+        android:id="@+id/buttonInvite"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Invite Others"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLog" />
+
+    <Button
+        android:id="@+id/buttonNoteBook"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Notebook"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTaskAssignment" />
+
+    <Button
+        android:id="@+id/buttonGraph"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:text="Graphs"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/buttonNoteBook"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewFeedBack" />
+
+    <Button
+        android:id="@+id/buttonLog"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Logs"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNoteBook" />
+
+    <Button
+        android:id="@+id/buttonTimeLine"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:text="Timeline"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/buttonLog"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGraph" />
+
+    <Button
+        android:id="@+id/buttonViewFeedBack"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:text="Feedback"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/buttonTaskAssignment"
+        app:layout_constraintTop_toBottomOf="@+id/ProjectNameTitle" />
+
+    <Button
+        android:id="@+id/buttonManageRole"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:text="Manage Role"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/buttonInvite"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTimeLine" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInvite" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:shadowColor="#DC0000"
+        android:text="Delete"
+        android:textAllCaps="true"
+        android:textColor="#DC0000"
+        android:textColorHighlight="#DA0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBack" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

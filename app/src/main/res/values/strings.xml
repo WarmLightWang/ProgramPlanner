@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Program Planner</string>
+    <string name="enter_name">Account Name:</string>
+    <string name="enter_password">Password:</string>
+    <string name="re_enter_password">Re-enter Password:</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="re_password_hint">Re-enter Password</string>
+    <string name="name_hint">Enter Account Name</string>
+    <string name="answer_hint">Enter Your Answer</string>
+    <string name="email_hint">Enter Your Email:</string>
+    <string name="email_address">Email Address:</string>
+    <string name="security_question">Choose a Security Question:</string>
+    <string name="question_answer">Enter Your Answer:</string>
+    <string name="security_question_display">security question goes here</string>
+    <string name="error_message">error message goes here</string>
+    <string name="new_password_tip">Enter New Password:</string>
+    <string name="new_password_hint">New Password</string>
+    <string name="re_enter_password_tip">Re-enter New Password:</string>
+    <string name="re_enter_password_hint">Re-enter Password</string>
+
+</resources>

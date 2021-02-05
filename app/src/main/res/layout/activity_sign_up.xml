@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signUpActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewSignUp"
+            android:layout_width="240dp"
+            android:layout_height="113dp"
+            android:layout_marginStart="85dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/signup"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/accountNameTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/enter_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSignUp" />
+
+        <EditText
+            android:id="@+id/enterAccountName"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="85dp"
+            android:ems="10"
+            android:hint="@string/name_hint"
+            android:inputType="textPersonName"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountNameTip"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/passwordTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/enter_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterAccountName" />
+
+        <EditText
+            android:id="@+id/enterPassword"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="84dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordTip" />
+
+        <TextView
+            android:id="@+id/reEnterPasswordTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="21dp"
+            android:text="@string/re_enter_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterPassword" />
+
+        <EditText
+            android:id="@+id/reEnterPassword"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="85dp"
+            android:ems="10"
+            android:hint="@string/re_password_hint"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reEnterPasswordTip"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/securityQuestionTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="21dp"
+            android:text="@string/security_question"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reEnterPassword" />
+
+        <Spinner
+            android:id="@+id/spinnerSecurityQuestion"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="85dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/securityQuestionTip" />
+
+        <TextView
+            android:id="@+id/enterAnswerTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="21dp"
+            android:text="@string/question_answer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSecurityQuestion" />
+
+        <EditText
+            android:id="@+id/enterAnswer"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="85dp"
+            android:ems="10"
+            android:hint="@string/answer_hint"
+            android:inputType="textPersonName"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterAnswerTip"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="85dp"
+            android:gravity="center"
+            android:text="@string/error_message"
+            android:textColor="@color/design_default_color_error"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterAnswer" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buttonNextStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="177dp"
+            android:layout_marginTop="18dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:backgroundTint="#FAF9F9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/errorMessage"
+            app:srcCompat="@drawable/arrowicon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

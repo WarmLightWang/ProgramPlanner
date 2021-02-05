@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notebookActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/noteBookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="53dp"
+            android:text="Notebook"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNote"
+            android:layout_width="314dp"
+            android:layout_height="94dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="21dp"
+            android:background="#DDF1FA"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addNoteTip" />
+
+        <TextView
+            android:id="@+id/noteListTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="167dp"
+            android:layout_marginTop="17dp"
+            android:text="Note List:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noteBookTitle" />
+
+        <TextView
+            android:id="@+id/addNoteTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="12dp"
+            android:text="Add New Note:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noteScroll" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="28dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNote" />
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="28dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/buttonSubmit"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNote" />
+
+    <ScrollView
+        android:id="@+id/noteScroll"
+        android:layout_width="362dp"
+        android:layout_height="239dp"
+        android:layout_marginTop="20dp"
+        android:fadeScrollbars="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteListTip">
+
+        <LinearLayout
+            android:id="@+id/noteList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>

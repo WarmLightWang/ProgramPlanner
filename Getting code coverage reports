@@ -1,0 +1,6 @@
+Android studio doesn't provide code coverage for UI tests
+Jacoco tool was used to generate these
+from android studio terminal, run "gradlew createDebugCoverageReport"
+coverage report can be found at:
+  build/reports/coverage/debug/index.html
+You can open this file in your browser to see coverage statistics

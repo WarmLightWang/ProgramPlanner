@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customerMainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mainPageTitle"
+        android:layout_width="288dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="84dp"
+        android:text="Customer Main Page"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ProjectNameTitle"
+        android:layout_width="260dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="59dp"
+        android:gravity="center"
+        android:text="Project Name Goes Here"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainPageTitle" />
+
+    <Button
+        android:id="@+id/buttonLeaveFeedBack"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="60dp"
+        android:text="Leave a feedback"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProjectNameTitle" />
+
+    <Button
+        android:id="@+id/buttonTimeline"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="76dp"
+        android:text="Timeline"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLeaveFeedBack" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="70dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTimeline" />
+</androidx.constraintlayout.widget.ConstraintLayout>
